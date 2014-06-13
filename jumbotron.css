@@ -1,0 +1,159 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* Other custom stuffs */
+.jumbotron {
+	padding-top: 28px;
+	padding-bottom: 28px;
+	margin-bottom:15px;
+}
+
+#cmapgif {
+	float:right;
+	border-style: solid;
+    border-width: 3px;
+	margin-left:10px;
+	margin-top:10px;
+	cursor: pointer;
+}
+
+#addConceptRow {
+	margin-bottom: 10px;
+}
+
+#addConceptRow.affix {
+	position: fixed;
+	top: 9px;
+	z-index: 10000;
+}
+
+.col-lg-3 {
+	padding-left: 0px;
+}
+
+#conceptBody {
+	height: 900px;
+	border-style: dotted;
+    border-width: 1px;
+	border-color: #999999
+}
+
+.modal-dialog {
+	margin: 80px auto;
+}
+
+/* Begin jsplumb CSS */
+
+.demo {
+  position: relative;
+  width:100%;
+  margin-top: 15px;
+  margin-bottom:15px;
+  overflow:auto;  
+  height: 875px;
+}
+
+
+.w { 	
+	padding:24px;
+	position:absolute;
+	border: 1px solid black;
+	z-index:4;
+	border-radius:1em;
+	border:1px solid #346789;
+	box-shadow: 2px 2px 19px #e0e0e0;
+	-o-box-shadow: 2px 2px 19px #e0e0e0;
+	-webkit-box-shadow: 2px 2px 19px #e0e0e0;
+	-moz-box-shadow: 2px 2px 19px #e0e0e0;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	opacity:0.9;
+	filter:alpha(opacity=80);
+	cursor:move;
+	background-color:white;
+	font-size:15px;
+	-webkit-transition:background-color 0.25s ease-in;
+	-moz-transition:background-color 0.25s ease-in;
+	transition:background-color 0.25s ease-in;	
+}
+
+.w:hover {
+	background-color: #428bca;
+	color:white;
+
+}
+
+.aLabel {
+	-webkit-transition:background-color 0.25s ease-in;
+	-moz-transition:background-color 0.25s ease-in;
+	transition:background-color 0.25s ease-in;
+}
+
+.aLabel._jsPlumb_hover, ._jsPlumb_source_hover, ._jsPlumb_target_hover {
+	background-color: #5cb85c;
+	color:white;
+	z-index:10;
+}
+
+.aLabel {
+	background-color:white;
+	opacity:0.9;
+	padding:0.3em;				
+	border-radius:0.5em;
+	border:1px solid #346789;
+	cursor:pointer;
+}
+
+.ep {
+	position:absolute;
+	bottom: 2px;
+	right: 44%;
+	width:1em;
+	height:1em;
+	background-color:orange;
+	cursor:pointer;
+	box-shadow: 0px 0px 2px black;
+	-webkit-transition:-webkit-box-shadow 0.25s ease-in;
+	-moz-transition:-moz-box-shadow 0.25s ease-in;
+	transition:box-shadow 0.25s ease-in;
+}
+
+.ep:hover {
+	width:1.1em;
+	height:1.1em;
+	box-shadow: 0px 0px 10px black;
+}
+
+.statemachine-demo ._jsPlumb_endpoint {
+	z-index:3;
+}
+
+#concept1 {
+	left: 456px;
+	top: 40px;
+
+	padding: 34px;
+}
+
+#concept2 {
+	left:270px;
+	top:225px;
+}
+#concept3 {
+	left: 678px;
+	top:229px;
+}
+#concept4 {
+	left:395px;
+	top:380px;
+}
+#concept5 {
+	left:876px;
+	top:408px;
+}
+.dragHover { border:2px solid orange; }
+
+path { cursor:pointer; }
